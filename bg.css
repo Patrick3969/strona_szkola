@@ -1,0 +1,23 @@
+.baner {
+    background-image: url(katowice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animate-bg 50s infinite linear;
+    height: 600px;
+}
+
+@keyframes animate-bg {
+    from {
+        background-size: 100%;
+        background-position: 0% 0%;
+    }
+    50% {
+        background-size: 120%;
+        background-position: 0% 20%
+    }
+    to {
+        background-size: 100%;
+        background-position: 0% 0%;
+    }
+}

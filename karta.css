@@ -1,0 +1,51 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.karta {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-color: #2f3136;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #5865f2;
+    border-radius: 50px;
+    transition: all 1s ease 0s;
+    border-bottom: none;
+}
+
+.karta:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    display: inline-block;
+    background-color: #5865f2;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.karta h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.karta a:link {
+    color: #ed4245;
+}
+
+.karta a:visited {
+    color: #343da1;
+}
+
+.karta a:hover {
+    color: chartreuse;
+}
