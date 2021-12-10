@@ -45,6 +45,62 @@ footer h3 {
     margin-right: 20px;
 }
 
+@media (min-width: 800px){
+    /*pełen ekran */
+    .tresc {
+        border-bottom: 2px solid #5865f2;
+        border-right: 2px solid #5865f2;
+        border-top: 2px solid #5865f2;
+        color: white;
+        width: 50%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 800px){
+    /* nie pełen ekran */
+    .tresc {
+        border-bottom: 2px solid #5865f2;
+        border-right: 2px solid #5865f2;
+        border-top: 2px solid #5865f2;
+        color: white;
+        width: 85%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-top: 200px;
+    }
+}
+
+.tresc p {
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.tresc h2 {
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+@media (min-width: 800px){
+    /*pełen ekran */
+    img {
+        width: 25%;
+        margin:0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 800px){
+    /* nie pełen ekran */
+    img {
+        width: 50%;
+        margin:0 auto;
+        display: block;
+    }
+}
 
 /* Color Theme Swatches in Hex 
 .My-Color-Theme-1-hex { color: #4AA5BD; }
