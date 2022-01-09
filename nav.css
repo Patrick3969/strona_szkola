@@ -80,7 +80,7 @@ li a.contact:hover {
 @media (max-width: 800px) {
     /*nie pełen ekran */
     header {
-        background-color: #202225;
+        background-color: #04090e;
     }
     .navlinks {
         position: fixed;
@@ -89,7 +89,7 @@ li a.contact:hover {
         text-align: center;
         transition: all 0.5s;
         right: -100%;
-        background: #36393f;
+        background: #0e2134;
     }
     .navlinks li {
         display: block;
@@ -118,4 +118,3 @@ li a.contact:hover {
         color: blue;
     }
 }
-

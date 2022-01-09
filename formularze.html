@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="formularz">
+    <style>
+        input {
+            background-color: #5865f2;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        input [type=submit] {
+            width: 100px;
+        }
+        
+        input [type=reset] {
+            width: 100px;
+        }
+        
+        body {
+            background-color: #04090e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ELON MUSK, ŁATWE INWESTYCJE 2000</h1>
+    <form action="wyslany_formularz.html" method="get">
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            <label>
+                Padaj nr karta kredytowa :
+                <input type="text" placeholder="nr karta kredytowa" required autofocus>
+            </label>
+            <br><br>
+            <label>
+                podaj hasło do banku :
+                <input type="password" required>
+            </label>
+            <br><br>
+            <label>
+                Podaj wiek :
+                <input type="number" min="18" max="60" step="2">
+            </label>
+            <br><br>
+            <label>
+                Podaj email :
+                <input type="email" placeholder="mail">
+            </label>
+            <br><br>
+            <label>
+                Podaj nr telefonu :
+                <input type="tel" placeholder="nr telefonu">
+            </label>
+            <br><br>
+            <label>
+                Podaj adres twojej strony :
+                <input type="url" placeholder="adres strony">
+            </label>
+            <br><br>
+            <label>
+                Podaj date urodzenia :
+                <input type="date" placeholder="date urodzenia">
+            </label>
+            <br><br>
+            <label>
+                Podaj twój ulubiony kolor :
+                <input type="color">
+            </label>
+            <br><br>
+            <label>
+                send nudes :
+                <input type="file">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>oceny</legend>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">6</p>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">5</p>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">4</p>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">3</p>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">2</p>
+            <p>na koniec tego przedmiotu chcesz otrzymać ?<input type="radio" name="ocena">1</p>
+        </fieldset>
+        <fieldset>
+            <legend>#</legend>
+            <p>#<input type="checkbox" name="ocena">E</p>
+            <p>#<input type="checkbox" name="ocena">L</p>
+            <p>#<input type="checkbox" name="ocena">O</p>
+        </fieldset>
+        <fieldset>
+            <legend>coś</legend>
+            <h4>napisz cos :</h4>
+            <textarea rows="10" cols="30"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="wyślij">
+            <input type="reset" value="wyczyść">
+        </fieldset>
+    </form>
+</body>
+
+</html>

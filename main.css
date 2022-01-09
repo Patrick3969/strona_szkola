@@ -45,10 +45,10 @@ footer h3 {
     margin-right: 20px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
     /*pełen ekran */
     .tresc {
-        background-color: #2f3136;
+        background-color: #2f313600;
         border-bottom: 2px solid #5865f2;
         border-right: 2px solid #5865f2;
         border-top: 2px solid #5865f2;
@@ -60,10 +60,10 @@ footer h3 {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     /* nie pełen ekran */
     .tresc {
-        background-color: #2f3136;
+        background-color: #2f313600;
         border-bottom: 2px solid #5865f2;
         border-right: 2px solid #5865f2;
         border-top: 2px solid #5865f2;
@@ -87,7 +87,7 @@ footer h3 {
     font-size: 40px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
     /*pełen ekran */
     .zdjecie {
         border-bottom: 2px solid #5865f2;
@@ -102,7 +102,7 @@ footer h3 {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     /* nie pełen ekran */
     .zdjecie {
         border-bottom: 2px solid #5865f2;
@@ -129,12 +129,10 @@ footer h3 {
         text-align: center;
         color: #fff;
     }
-    
     .content h1 {
         font-size: 70px;
         margin-top: 80px;
     }
-    
     .content p {
         color: rgb(200, 200, 200);
         margin: 20px auto;
@@ -149,12 +147,10 @@ footer h3 {
         text-align: center;
         color: #fff;
     }
-    
     .content h1 {
         font-size: 40px;
         margin-top: 80px;
     }
-    
     .content p {
         color: rgb(200, 200, 200);
         margin: 20px auto;
@@ -163,10 +159,6 @@ footer h3 {
         line-height: 25px;
     }
 }
-
-
-
-
 
 
 /* Color Theme Swatches in Hex 

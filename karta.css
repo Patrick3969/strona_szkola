@@ -3,9 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
-
 
 .karta {
     width: 250px;
@@ -22,7 +20,7 @@
     border-bottom: none;
     background-size: cover;
 }
-    
+
 .karta:hover {
     width: 250px;
     height: 250px;
@@ -30,9 +28,9 @@
     display: inline-block;
     background-color: #5865f2;
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
 
 .center h2 {
