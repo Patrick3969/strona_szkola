@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            color: white;
+            background-color: #04090e;
+        }
+        input{
+            background-color: #5865f2;
+            color: white;
+            border-radius: 20px;
+        }
+        button{
+            background-color: #5865f2;
+            color: white;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 50px;
+        }
+
+        #color{
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: #5865f2;
+            border-radius: 50px;
+            font-size: 20px;
+        }
+
+        strong{
+            color: red;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>zdarzenia java script</h1>
+    <button onclick="bg_img()">usuń bg img (onclick)</button>
+    <button onmouseover="bg_img_add()" onmouseout="bg_img()">dodaj bg img(onmouseover i onmouseout)</button>
+    <button ondblclick="bg_img_add()">dodaj bg img(buble click)</button>
+    <form onsubmit="bg_img()" onreset="bg_img_add()">
+        <p>nazwisko</p>
+        <input placeholder="onfocus i onblur" type="text" onfocus="bg_img_add()" onblur="bg_img()">
+        <p>imie</p>
+        <input placeholder="onchane" type="text" onchange="bg_img_add()">
+        <div>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+    <button id="color" onclick="color()"> zmień kolor</button>
+    <h2>jak odnieść się do elementu ? (notatka)</h2>
+    <li>document.getElementById</li>
+    <li>document.getElementsByTagName</li>
+    <li>document.getElementsByClassName</li>
+    <li>document.querySelectorAll</li>
+    <li>document.querySelector</li>
+    <strong>Achtung! jeśli tworzymy kolekcje to odnosimy się do elementów jak w tablicy</strong><br>
+
+    <h2>jak dodać zdarzenie ? (notatka)</h2>
+    <li>target.addEventListener(type np.click, nazwa funkcji);</li>
+    <li>wewnątrz znacznika html np.div onclick="nazwa funkcji"</li>
+    <script>
+        function bg_img_add(){
+            document.getElementById("body").style.backgroundImage = "URL(bg.jpg)"
+        }
+
+    function bg_img(){
+            document.getElementById("body").style.backgroundImage = ""
+        }
+
+    function color(){
+            document.getElementById("body").style.backgroundColor = prompt("podaj kolor")
+        }
+    </script>
+</body>
+</html>
