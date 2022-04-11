@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+        p {
             font-size: 50px;
         }
-
-        p::after{
-            content: url(shopping-cart.png);
+        
+        p::after {
+            content: url(/img/shopping-cart.png);
             display: block;
             position: relative;
             top: -60px;
@@ -20,12 +21,12 @@
             width: 30px;
             transition: 5s;
         }
-
-        p:hover::after{
+        
+        p:hover::after {
             left: 900px;
         }
         
-        body{
+        body {
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -33,7 +34,11 @@
         }
     </style>
 </head>
+
 <body>
-    <div><p class="cos">Koszyk</p></div>
+    <div>
+        <p class="cos">Koszyk</p>
+    </div>
 </body>
+
 </html>
