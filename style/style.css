@@ -378,7 +378,7 @@ li a.contact:hover {
 .bg {
     width: 100%;
     height: 110vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(scena.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(/img/scena.png);
     background-size: cover;
     background-position: center;
 }

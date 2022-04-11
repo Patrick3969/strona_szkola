@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             text-align: center;
             color: white;
             background-color: #04090e;
         }
-        input{
+        
+        input {
             background-color: #5865f2;
             color: white;
             border-radius: 20px;
         }
-        button{
+        
+        button {
             background-color: #5865f2;
             color: white;
             border-radius: 20px;
             margin: 10px;
         }
-        h1{
+        
+        h1 {
             font-size: 50px;
         }
-
-        #color{
+        
+        #color {
             margin-right: auto;
             margin-left: auto;
             margin-top: 50px;
@@ -36,12 +40,13 @@
             border-radius: 50px;
             font-size: 20px;
         }
-
-        strong{
+        
+        strong {
             color: red;
         }
     </style>
 </head>
+
 <body id="body">
     <h1>zdarzenia java script</h1>
     <button onclick="bg_img()">usuń bg img (onclick)</button>
@@ -71,17 +76,18 @@
     <li>target.addEventListener(type np.click, nazwa funkcji);</li>
     <li>wewnątrz znacznika html np.div onclick="nazwa funkcji"</li>
     <script>
-        function bg_img_add(){
-            document.getElementById("body").style.backgroundImage = "URL(bg.jpg)"
+        function bg_img_add() {
+            document.getElementById("body").style.backgroundImage = "URL(/img/bg.jpg)"
         }
 
-    function bg_img(){
+        function bg_img() {
             document.getElementById("body").style.backgroundImage = ""
         }
 
-    function color(){
+        function color() {
             document.getElementById("body").style.backgroundColor = prompt("podaj kolor")
         }
     </script>
 </body>
+
 </html>
