@@ -16,22 +16,24 @@ body {
 
 h1 {
     color: white;
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
     font-family: "AstroSpace", sans-serif;
-    margin-top: 80px;
-    margin: 10px;
+    margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 60px;
+        margin-top: 150px;
+    }
 }
 
 @media (max-width: 400px) {
     /* nie pełen ekran */
     h1 {
-        color: white;
         font-size: 45px;
-        text-align: center;
-        font-family: "AstroSpace", sans-serif;
-        margin-top: 80px;
-        margin: 10px;
+        margin-top: 150px;
     }
 }
 
@@ -145,7 +147,8 @@ footer h3 {
 
 @media (max-width: 800px) {
     .content {
-        margin-top: 15%;
+        position: relative;
+        top: 15%;
         text-align: center;
         color: #fff;
     }
@@ -247,7 +250,12 @@ li a.contact:hover {
 @media (max-width: 800px) {
     /*nie pełen ekran */
     header {
+        border-bottom: solid #5966f4 2px;
         background-color: #04090e;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        width: 100vw;
     }
     .navlinks {
         position: fixed;
@@ -321,7 +329,8 @@ li a.contact:hover {
         position: relative;
         top: 0;
         left: 0;
-        background: #202225da;
+        background: #04090edb;
+        border-top: solid #5966f4 2px;
     }
     footer .cont {
         position: relative;
@@ -349,7 +358,7 @@ li a.contact:hover {
 @media (max-width: 800px) {
     /*nie pełen ekran */
     footer {
-        background-color: #202225;
+        background-color: #04090e;
         color: white;
         font-family: "AstroSpace", sans-serif;
         font-size: 20px;
@@ -358,7 +367,8 @@ li a.contact:hover {
         padding-top: 3px;
         padding-bottom: 3px;
         text-align: center;
-        margin-top: 600px;
+        margin-top: 50px;
+        border-top: solid #5966f4 2px;
     }
 }
 
@@ -440,6 +450,51 @@ li a.contact:hover {
 
 .karta a:hover {
     color: chartreuse;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #04090e;
+    border: solid #5966f4 2px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.card_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card h5 {
+    font-size: 23px;
+    display: inline;
+    color: #5966f4;
+    background-clip: text;
+}
+
+.card p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+    .card_box {
+        flex-wrap: wrap;
+    }
 }
 
 
