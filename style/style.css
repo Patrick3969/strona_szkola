@@ -7,11 +7,16 @@
     src: url(/fonts/AstroSpace.ttf);
 }
 
+hr {
+    border: solid 3px #343da1;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     background-color: #04090e;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -49,41 +54,19 @@ footer h3 {
     margin-right: 20px;
 }
 
-@media (min-width: 800px) {
-    /*pełen ekran */
-    .tresc {
-        background-color: #2f313600;
-        border-bottom: 2px solid #5865f2;
-        border-right: 2px solid #5865f2;
-        border-top: 2px solid #5865f2;
-        color: white;
-        width: 75%;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        margin-top: 400px;
-    }
-}
-
-@media (max-width: 800px) {
-    /* nie pełen ekran */
-    .tresc {
-        background-color: #2f313600;
-        border-bottom: 2px solid #5865f2;
-        border-right: 2px solid #5865f2;
-        border-top: 2px solid #5865f2;
-        color: white;
-        width: 90%;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        margin-top: 200px;
-    }
+.tresc {
+    background-color: #2f313600;
+    color: white;
+    width: 75vw;
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tresc p {
     color: rgb(200, 200, 200);
-    margin-left: 40px;
-    margin-right: 20px;
     font-size: 18px;
+    text-align: center;
 }
 
 .tresc h2 {
@@ -91,40 +74,74 @@ footer h3 {
     font-size: 40px;
 }
 
+.partner-box {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner {
+    height: auto;
+    width: 55vw;
+    padding: 20px 35px;
+    background-color: #04090e;
+    border: solid 2px #343da1;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner h5 {
+    font-size: 23px;
+    display: inline;
+    color: #343da1;
+    margin-top: 15px;
+}
+
+.partner p {
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
 @media (min-width: 800px) {
     /*pełen ekran */
     .zdjecie {
-        border-bottom: 2px solid #5865f2;
-        border-left: 2px solid #5865f2;
-        border-top: 2px solid #5865f2;
-        color: white;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        margin-top: 50px;
-        margin-left: 25%;
-        margin-bottom: 50px;
+        background-image: url(/img/blender.png);
+        width: 83vw;
+        height: 45vw;
+        background-size: contain;
+        background-position: center;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        margin-bottom: 100px;
+        border: solid 3px #343da1;
     }
 }
 
 @media (max-width: 800px) {
     /* nie pełen ekran */
     .zdjecie {
-        border-bottom: 2px solid #5865f2;
-        border-left: 2px solid #5865f2;
-        border-top: 2px solid #5865f2;
-        color: white;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        margin-top: 50px;
-        margin-left: 5%;
+        background-image: url(/img/blender.png);
+        width: 90vw;
+        height: 55vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 70px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-
-.zdjecie img {
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
 }
 
 @media (min-width: 800px) {
@@ -475,6 +492,7 @@ li a.contact:hover {
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    margin-bottom: 100px;
 }
 
 .card h5 {
